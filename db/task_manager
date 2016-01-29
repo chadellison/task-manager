@@ -2,14 +2,11 @@
 tasks:
 - id: 1
   title: drink a belgian beer
-  description: belgian beers are delicious
+  description: belgian beers are so delicious
 - id: 2
   title: drink coffee
-  description: coffee will help you stay awake
+  description: coffee helps you stay awake
 - id: 3
   title: do more tutorials
-  description: you have so much to learn still
-- id: 4
-  title: help jones
-  description: jones got lost
-total: 4
+  description: you have so much more to learn
+total: 3

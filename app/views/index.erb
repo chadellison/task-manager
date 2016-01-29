@@ -3,3 +3,24 @@
 <% @tasks.each do |task| %>
   <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
 <% end %>
+
+<style>
+  a:hover {
+    font-weight: bold;
+  }
+
+  body {
+    background-color: #e0e0eb;
+    /*background-image: url("https://plus.google.com/u/0/photos/115492633106293884993/albums/5963732397473350145/5963732485765919186?pid=5963732485765919186&oid=115492633106293884993");*/
+  }
+
+  h1 {
+    color: brown;
+    font-size: 45px;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+</style>
