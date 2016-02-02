@@ -9,4 +9,7 @@ tasks:
 - id: 3
   title: do more tutorials
   description: you have so much more to learn
-total: 3
+- id: 4
+  title: lightning talk
+  description: prepare 5 minute talk using keynote
+total: 4
