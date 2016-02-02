@@ -1,9 +1,3 @@
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/application.css" charset="utf-8">
-</head>
-
 <body style="background-color: #d9d9d9;">
   <div class='col-md-12 navbar navbar-default navbar-static-top'>
     <a href='/' class='navbar-brand'>Task Manager</a>
@@ -15,7 +9,7 @@
       <h1>All Tasks</h1>
 
       <% @tasks.each do |task| %>
-        <h3 style="height: 30px;"><a href="/tasks/<%= task.id %>"><i class='glyphicon glyphicon-briefcase'></i>   <%= task.title %></a></h3>
+        <h3><a href="/tasks/<%= task.id %>"><i class='glyphicon glyphicon-briefcase'></i>   <%= task.title %></a></h3>
       <% end %>
       <div class="col-md-6" style="background: url('https://lh3.googleusercontent.com/CcZ6MaXnN5CJgtNmiDeZAna5t7JvQe-MYmsVitXqmJsOd7mfCRWz348Q4o4cGcVHWVRy=w552-h436-p-no'); height: 400px;">
       </div>
