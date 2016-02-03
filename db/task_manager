@@ -1,15 +1,15 @@
 ---
 tasks:
 - id: 1
-  title: drink a belgian beer
-  description: belgian beers are so delicious
-- id: 2
-  title: drink coffee
-  description: coffee helps you stay awake
+  title: Drink Belgian Beer
+  description: Belgian Beers are so Delicious
 - id: 3
-  title: do more tutorials
+  title: Do More Tutorials
   description: you have so much more to learn
 - id: 4
-  title: lightning talk
+  title: Lightning Talk
   description: prepare 5 minute talk using keynote
-total: 4
+- id: 5
+  title: Drink Coffee
+  description: coffee will help you stay awake!
+total: 5

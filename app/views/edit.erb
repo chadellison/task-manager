@@ -9,10 +9,11 @@
     </ul>
   </div>
 
-<form action="/tasks" method="post">
-  <h3 style="color: white">Enter a new task:</h3>
-  <input type='text' name='task[title]'/><br/>
-  <textarea name='task[description]'></textarea><br/>
-  <input type='submit'/ class="btn btn-primary button_space">
+<form action="/tasks/<%= @task.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <h3 style="color: white;">Update Your Task:</h3>
+  <input type='text' name='task[title]' value='<%= @task.title %>'/><br/>
+  <textarea name='task[description]'><%= @task.description %></textarea><br/>
+  <input type='submit' class="btn-primary">
 </form>
 </body>

@@ -6,11 +6,21 @@
     </ul>
   </div>
     <div class="container">
+
       <h1>All Tasks</h1>
 
       <% @tasks.each do |task| %>
-        <h3><a href="/tasks/<%= task.id %>"><i class='glyphicon glyphicon-briefcase'></i>   <%= task.title %></a></h3>
+        <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><i class='glyphicon glyphicon-briefcase'></i>   <%= task.title %></a></h3>
+        <a href="/tasks/<%= task.id %>/edit" class="btn btn-primary button_space">Edit</a>
+
+        <form action="/tasks/<%= task.id %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input class="btn btn-danger button_space" type="submit" value="delete">
+        </form>
+
       <% end %>
+      <div class="col-md-12 space">
+      </div>
       <div class="col-md-6" style="background: url('https://lh3.googleusercontent.com/CcZ6MaXnN5CJgtNmiDeZAna5t7JvQe-MYmsVitXqmJsOd7mfCRWz348Q4o4cGcVHWVRy=w552-h436-p-no'); height: 400px;">
       </div>
       <div class="col-md-6" style="background: url('https://lh3.googleusercontent.com/pkqjLVPLuMey2IhZza6oRmAg-1tjr1MZKJVW-93Y-vkm1QYSVqieZuIq5O6MdbXKksec=w512-h414-p-no'); height: 400px;">
